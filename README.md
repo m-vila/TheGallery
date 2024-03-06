@@ -21,38 +21,17 @@ To view the website locally, simply open the respective HTML files (`index.html`
 
 The project's file structure is organized as follows:
 
-Project-root
-├── about.html
-├── contact.html
-├── css
-│   └── styles.css
-├── img
-│   ├── article1.png
-│   ├── article2.jpeg
-│   ├── article3.jpeg
-│   ├── author.jpg
-│   ├── background.png
-│   ├── gallery1.jpeg
-│   ├── gallery2.jpeg
-│   ├── gallery3.jpeg
-│   ├── image1.png
-│   ├── image2.png
-│   ├── image3.png
-│   ├── image4.png
-│   ├── image5.png
-│   └── image6.png
-├── index.html
-└── js
-    └── script.js
+    project-root
+    ├── index.html
+    ├── about.html
+    ├── contact.html
+    ├── css                           
+    │   └── styles.css
+    ├── js                           
+    │   └── script.js
+    ├── img                           
+        └── (images)
 
-
-    .
-    ├── ...
-    ├── test                    # Test files (alternatively `spec` or `tests`)
-    │   ├── benchmarks          # Load and stress tests
-    │   ├── integration         # End-to-end, integration tests (alternatively `e2e`)
-    │   └── unit                # Unit tests
-    └── ...
 
 ## Technical Requirements
 
