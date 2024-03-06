@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Gallery - Contact</title>
+      <link rel="stylesheet" href="css/styles.css"> <!-- External CSS style -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> <!-- Web font -->
+      <style>
+         body {
+         font-family: "Raleway", sans-serif;
+         background-image: url('img/background.png');
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-size: cover;
+         }
+      </style>
+   </head>
+   <body>
+
+      <!-- Header and nav bar -->
+      <header class="page-header">
+         <h1>The Gallery</h1>
+         <nav>
+            <ul>
+               <li><a href="index.html">home</a></li>
+               <li><a href="about.html">about</a></li>
+               <li class="dropdown">
+                  <a href="#" class="dropbtn">exhibitions</a>
+                  <div class="dropdown-content">
+                     <a href="#">2024 calendar</a>
+                     <a href="#">past exhibitions</a>
+                  </div>
+               </li>
+               <li><a href="contact.html" class="current">contact</a></li>
+            </ul>
+         </nav>
+      </header>
+
+      <!-- Gallery Opening Times -->
+      <div class="timetable">
+         <h2>Gallery Opening Times</h2>
+         <table>
+            <thead>
+               <tr>
+                  <th>Day of the Week</th>
+                  <th>Time</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>Monday to Friday</td>
+                  <td>1:00 PM - 7:00 PM</td>
+               </tr>
+               <tr>
+                  <td>Saturday & Sunday</td>
+                  <td>5:00 PM - 9:00 PM</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+
+      <!-- Contact Form -->
+      <div id="contact-form">
+         <h2>Contact the gallery</h2>
+         <form action="submit.php" method="post" onsubmit="return validateForm()">
+            <label for="fname">Name:</label><br>
+            <input type="text" id="fname" name="fname" required style="margin-bottom: 10px;"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required style="margin-bottom: 10px;"><br>
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required style="margin-bottom: 10px;"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required style="margin-bottom: 10px;"></textarea><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+         </form>
+      </div>
+
+      <!-- Address and Google Maps Embed -->
+      <div class="map">
+         <h2>Gallery Location</h2>
+         <p>Address: 123 Art Street, Artville</p>
+         <!-- Embed Google Maps -->
+         <div class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.275723883501!2d151.2127217758148!3d-33.85678437323114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae665e892fdd%3A0x3133f8d75a1ac251!2sSydney%20Opera%20House!5e0!3m2!1sen!2sus!4v1709519580349!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+      </div>
+
+     <!-- Footer -->
+      <footer>
+         <p>&copy; 2024 The Gallery</p>
+         <div class="giphy-container">
+             <iframe src="https://giphy.com/embed/d31vTpVi1LAcDvdm" width="100%" height="100%" style="position:absolute" frameborder="0" class="giphy-embed"></iframe>
+         </div>
+     </footer>
+
+      <!-- JavaScript linked from script.js -->
+      <script src="js/script.js"></script>
+   </body>
+</html>
