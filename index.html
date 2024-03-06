@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Gallery - Home</title>
+      <link rel="stylesheet" href="css/styles.css"> <!-- External CSS style -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> <!-- Web font -->
+      <style>
+         body {
+         font-family: "Raleway", sans-serif;
+         background-image: url('img/background.png');
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-size: cover;
+         }
+      </style>
+   </head>
+   <body>
+
+      <!-- Header and nav bar -->
+      <header class="page-header">
+         <h1>The Gallery</h1>
+         <nav>
+            <ul>
+               <li><a href="index.html" class="current">home</a></li>
+               <li><a href="about.html">about</a></li>
+               <li class="dropdown">
+                  <a href="#" class="dropbtn">exhibitions</a>
+                  <div class="dropdown-content">
+                     <a href="#">2024 calendar</a>
+                     <a href="#">past exhibitions</a>
+                  </div>
+               </li>
+               <li><a href="contact.html">contact</a></li>
+            </ul>
+         </nav>
+      </header>
+
+      <!-- Main headline area -->
+      <section class="main-headline">
+         <div>
+            <h3>Opening March 26th 2024</h3>
+            <h2>The Gallery</h2>
+            <a href="#" class="button">Purchase Tickets</a>
+         </div>
+      </section>
+      <div>
+         <div class="info-container">
+            <div class="opening-hours">
+               <h4>Opening Hours:</h4>
+               <p>Monday - Friday: 1pm - 7pm</p>
+               <p>Saturday & Sunday: 5pm - 9pm</p>
+            </div>
+            <div class="upcoming-exhibitions">
+               <h4>Upcoming Exhibitions:</h4>
+               <p>March 26 - April 5: Modern Art Revolution</p>
+               <p>April 15 - May 10: Emerging Artists Showcase</p>
+            </div>
+         </div>
+      </div>
+
+      <!-- Slideshow Featured Work -->
+      <div class="slideshow-container">
+         <h1>Featured Work</h1>
+         <div class="mySlides fade">
+            <img src="img/image1.png" alt="Portrait two girls" class="rounded-image" style="width:100%">
+         </div>
+         <div class="mySlides fade">
+            <img src="img/image2.png" alt="Painting two girls working on laptops" class="rounded-image" style="width:100%">
+         </div>
+         <div class="mySlides fade">
+            <img src="img/image3.png" alt="Painting two people reading with headphones on" class="rounded-image" style="width:100%">
+         </div>
+         <div class="mySlides fade">
+            <img src="img/image4.png" alt="A girl in a greenhouse surrounded by peonies" class="rounded-image" style="width:100%">
+         </div>
+         <div class="mySlides fade">
+            <img src="img/image5.png" alt="A girl smelling a huge peonie" class="rounded-image" style="width:100%">
+         </div>
+         <div class="mySlides fade">
+            <img src="img/image6.png" alt="A woman and a girl by the beach" class="rounded-image" style="width:100%">
+         </div>
+      </div>
+
+      <!-- The Gallery -->
+      </div>
+      <div class="article-header">
+         <h2>The Space</h2>
+         <section id="articles">
+            <article>
+               <img src="img/gallery1.jpeg" alt="Image of the art gallery with people" class="rounded-image" style="width:70%">
+               <h4>A creative space for all</h4>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur provident itaque debitis ratione perspiciatis!.</p>
+            </article>
+            <article>
+               <img src="img/gallery2.jpeg" alt="Image of two people admiring a photo" class="rounded-image" style="width:76%">
+               <h4>Experience Art like never before</h4>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur provident itaque debitis ratione perspiciatis!.</p>
+            </article>
+            <article>
+               <img src="img/gallery3.jpeg" alt="Image of an empty room of an art gallery" class="rounded-image" style="width:58%">
+               <h4>Art and Emotion: All in one space</h4>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur provident itaque debitis ratione perspiciatis!.</p>
+            </article>
+         </section>
+      </div>
+
+      <!-- Newsletter Signup Form -->
+      <div class="newsletter">
+         <h2>Do you want to be the first to know about our next art show?</h2>
+         <h3>Sign up for her newsletter</h3>
+         <form action="submit.php" method="post">
+            <label for="fname">Name:</label><br>
+            <input type="text" id="fname" name="fname" required style="margin-bottom: 10px;"><br> <!-- Inline CSS style -->
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required style="margin-bottom: 10px;"><br><br> <!-- Inline CSS style -->
+            <input type="submit" value="Submit">
+         </form>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+         <p>&copy; 2024 The Gallery</p>
+      </footer>
+
+      <script>
+         //Slideshow script 
+         var slideIndex = 0;
+         showSlides();
+         
+         function showSlides() {
+             var i;
+             var slides = document.getElementsByClassName("mySlides");
+             for (i = 0; i < slides.length; i++) {
+                 slides[i].style.display = "none";
+             }
+             slideIndex++;
+             if (slideIndex > slides.length) {slideIndex = 1}
+             slides[slideIndex-1].style.display = "block";
+             setTimeout(showSlides, 3000); 
+         }
+         
+         // Function to validate email using regular expression
+         function validateEmail(email) {
+            const re = /\S+@\S+\.\S+/;
+            return re.test(email);
+         }
+      </script>
+   </body>
+</html>
